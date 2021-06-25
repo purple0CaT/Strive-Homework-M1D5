@@ -44,9 +44,9 @@ console.log('\n<=== EXERCISE 3 ===> \n')
 function crazyDiff(val1){
     let dif
     if (val1 <= 19) {
-        dif = (19 - val1);
+        dif = Math.abs(19 - val1);
         } else {
-        dif = (val1 - 19) * 3;
+        dif = Math.abs((val1 - 19) * 3);
         }
     return dif
     }
@@ -61,7 +61,7 @@ Write a function "boundary" which accept an integer n and returns true if n is w
 console.log('\n<=== EXERCISE 4 ===> \n')
 
 function boundary (n) {
-   return ( n >=20 && n <= 100) || n === 400 ? true : false
+    return ( n >=20 && n <= 100) || n === 400 ? true : false
 }
 console.log(boundary(400))
 console.log(boundary(30))
