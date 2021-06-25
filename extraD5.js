@@ -80,6 +80,19 @@ addToShoppingCart(newObj)
 In your eCommerce you have an array of objects called shoppingCart. In this array you have a number of objects with a price, a name, an id and the quantity to be shipped.
 Create a function "maxShoppingCart" which receives the shoppingCart array and returns the most expensive item in the array.
 */
+console.log('\n<=== EXERCISE 14 ===> \n')
+
+function maxShoppingCart(){
+    let x = 0
+    let y = []
+    for(i=0; i< shoppingCart.length; i++){
+        x = shoppingCart[i].price
+        y.push(x)       
+    }
+    let z = y.indexOf(Math.max(...y))
+    return shoppingCart[z]
+}
+console.log(maxShoppingCart())
 
 /* WRITE YOUR CODE HERE */
 
