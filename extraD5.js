@@ -58,6 +58,17 @@ console.log(`Total earnings: ${shippingCartTotal(shoppingCart)}`)
 In your eCommerce you have an array of objects called shoppingCart. In this array you have a number of objects with a price, a name, an id and the quantity to be shipped.
 Create a function "addToShoppingCart" which receives a new object, adds it to shoppingCart and returns the total number of items in the shoppingCart.
 */
+console.log('\n<=== EXERCISE 13 ===> \n')
+let newObj = {id: 4, name: 'cabel', price: 12, quantity: 10}
+
+function addToShoppingCart(x){
+    shoppingCart.push(x)
+    console.log(shoppingCart)
+    
+    console.log(`Total number of items: ${shoppingCart.length}`)
+
+}
+addToShoppingCart(newObj)
 
 /* WRITE YOUR CODE HERE */
 
