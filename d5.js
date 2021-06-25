@@ -79,19 +79,13 @@ function strivify(string){
     if (typeof string === 'string'){
 
         if (string !== 'Strive'){
-        return `Strive  ${string}`
+            return `Strive  ${string}`
         } else {
             return string
         }
     } else{
         return 'Not a string'
     }
-
-    // if ( typeof string === 'string' && string !== 'Strive') {
-    // return `Strive  ${string}`
-    // } else {
-    //     return string
-    // }
 
 }
 console.log(strivify('Strive'))
@@ -174,12 +168,11 @@ Write a function "cutString" to create a new string without the first and last c
 */
 console.log('\n<=== EXERCISE 9 ===> \n')
 function cutString(q){
-    let s
+
     if ( typeof q ==='string'){
     
-        s = q.slice(1, -1)
-
-        return s
+        return q.slice(1, -1)
+        
     } return 'Not a string'
 
 }
