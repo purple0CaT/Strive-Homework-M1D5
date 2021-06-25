@@ -2,6 +2,29 @@
 Write a function "checkArray" which receives an array of random numbers (created with giveMeRandom) and prints, for each item, whether it's bigger than 5.
 The function returns the sum of the numbers bigger than 5.
 */
+console.log('\n<=== EXERCISE 11 ===> \n')
+// array
+const arry = []
+for ( i=0; i<10; i++){
+    let x = Math.round(Math.random() * (10 - 0) + 0)
+    arry.push(x)
+}
+console.log(arry)
+
+// function
+function checkArray(arry){
+    let sum = 0
+    for ( i = 0; i < arry.length; i++){
+
+        if (arry[i] > 5){
+            console.log(arry[i])
+            sum += arry[i]
+        }
+    } 
+console.log(' The sum is:')
+return sum
+}
+console.log(checkArray(arry))
 
 /* WRITE YOUR CODE HERE */
 
