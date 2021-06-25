@@ -65,7 +65,11 @@ function addToShoppingCart(x){
     shoppingCart.push(x)
     console.log(shoppingCart)
     
-    console.log(`Total number of items: ${shoppingCart.length}`)
+    let y = 0
+    for ( i=0; i<shoppingCart.length; i++){
+        y += shoppingCart[i].quantity
+    }
+    console.log(`Total number of items: ${y}`)
 
 }
 addToShoppingCart(newObj)
